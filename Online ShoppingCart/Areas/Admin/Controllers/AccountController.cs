@@ -54,11 +54,9 @@ namespace Online_ShoppingCart.Areas.Admin.Controllers
             {
                 if (ModelState.IsValid)
                 {
-
-
                     Account kh = _context.Accounts
-                    .Include(p => p.Role)
-                    .SingleOrDefault(p => p.Email.ToLower() == model.UserName.ToLower().Trim());
+                                        .Include(p => p.Role)
+                                        .SingleOrDefault(p => p.Email.ToLower() == model.UserName.ToLower().Trim());
 
                     if (kh == null)
                     {

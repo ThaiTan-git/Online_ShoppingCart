@@ -56,7 +56,7 @@ namespace Online_ShoppingCart.Areas.Admin.Controllers
 
             ViewBag.CurrentPage = pageNumber;
 
-            ViewData["DanhMuc"] = new SelectList(_context.Categories, "CatId", "CatName");
+            ViewData["DanhMuc"] = new SelectList(_context.Categories, "CatId", "CatName", CatID);
 
             return View(models);
         }

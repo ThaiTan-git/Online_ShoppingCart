@@ -53,7 +53,7 @@ namespace Online_ShoppingCart.Controllers
                 model.Phone = khachhang.Phone;
                 model.Address = khachhang.Address;
             }
-            ViewData["lsTinhThanh"] = new SelectList(_context.Locations.Where(x => x.Levels == 1).OrderBy(x => x.Type).ToList(),"Location","Name");
+            ViewData["Locations"] = new SelectList(_context.Locations.Where(x => x.Levels == 1).ToList(), "LocationId", "Name");
             ViewBag.GioHang = cart;
             return View(model);
         }
