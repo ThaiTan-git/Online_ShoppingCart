@@ -70,6 +70,7 @@ namespace Online_ShoppingCart
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseSession();
 
             app.UseRouting();
 
