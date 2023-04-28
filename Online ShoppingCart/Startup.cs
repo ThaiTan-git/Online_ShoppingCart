@@ -75,6 +75,7 @@ namespace Online_ShoppingCart
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseAuthentication();
 
 
             app.UseEndpoints(endpoints =>
