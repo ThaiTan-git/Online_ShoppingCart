@@ -4,7 +4,33 @@
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>Online_ShoppingCart</RootNamespace>
   </PropertyGroup>
-
+	
+  <ItemGroup>
+    <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
+    <None Remove="Areas\Admin\Views\Shared\" />
+    <None Remove="Areas\Admin\Views\Home\" />
+    <None Remove="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" />
+    <None Remove="Microsoft.EntityFrameworkCore.Tools" />
+    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="PagedList.Core.Mvc" />
+    <None Remove="AspNetCoreHero.ToastNotification" />
+    <None Remove="Views\Blog\" />
+    <None Remove="Enums\" />
+    <None Remove="Areas\Admin\Views\Search\" />
+    <None Remove="ModelViews\" />
+    <None Remove="Views\Accounts\" />
+    <None Remove="Views\ShoppingCart\" />
+    <None Remove="Controllers\Components\" />
+    <None Remove="Views\Shared\Components\" />
+    <None Remove="Views\Shared\Components\NumerCart\" />
+    <None Remove="Views\Shared\Components\HeaderCart\" />
+    <None Remove="Views\Checkout\" />
+    <None Remove="Views\DonHang\" />
+    <None Remove="Areas\Admin\Views\Account\" />
+    <None Remove="Views\Search\" />
+  </ItemGroup>  	
+	
   <ItemGroup>
     <PackageReference Include="AspNetCoreHero.ToastNotification" Version="1.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.10" />
@@ -21,22 +47,32 @@
   </ItemGroup>
 
   <ItemGroup>
-	  <Folder Include="Areas\Admin\Data\" />
+	  <Folder Include="Areas\Admin\Views\Shared\" />
+	  <Folder Include="Areas\Admin\Views\Home\" />
+	  <Folder Include="Views\Blog\" />
+	  <Folder Include="Enums\" />
+	  <Folder Include="Areas\Admin\Views\Search\" />
+	  <Folder Include="wwwroot\images\pages\" />
+	  <Folder Include="wwwroot\images\category\" />
+	  <Folder Include="wwwroot\images\news\" />
+	  <Folder Include="ModelViews\" />
+	  <Folder Include="Views\Accounts\" />
+	  <Folder Include="Views\ShoppingCart\" />
+	  <Folder Include="Controllers\Components\" />
+	  <Folder Include="Views\Shared\Components\" />
+	  <Folder Include="Views\Shared\Components\NumberCart\" />
+	  <Folder Include="Views\Shared\Components\HeaderCart\" />
+	  <Folder Include="Views\Checkout\" />
+	  <Folder Include="Views\DonHang\" />
+	  <Folder Include="Areas\Admin\Views\Account\" />
+	  <Folder Include="Views\Search\" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Areas\Admin\Views\AdminAccounts\Create.cshtml" />
-    <None Include="Areas\Admin\Views\AdminAccounts\Delete.cshtml" />
-    <None Include="Areas\Admin\Views\AdminAccounts\Details.cshtml" />
-    <None Include="Areas\Admin\Views\AdminAccounts\Edit.cshtml" />
-    <None Include="Areas\Admin\Views\AdminAccounts\Index.cshtml" />
-    <None Include="Views\Home\Index.cshtml" />
-    <None Include="Views\Home\Privacy.cshtml" />
-    <None Include="Views\Shared\Error.cshtml" />
-    <None Include="Views\Shared\_FooterPartialView.cshtml" />
-    <None Include="Views\Shared\_HeaderPartialView.cshtml" />
-    <None Include="Views\Shared\_Layout.cshtml" />
-    <None Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
+      <Content Remove="wwwroot\images\page\" />
+      <Content Remove="wwwroot\images\category\" />
+      <Content Remove="wwwroot\images\news\" />
   </ItemGroup>
+	
 
 </Project>
